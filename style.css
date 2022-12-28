@@ -84,7 +84,7 @@ body{
     color: var(--mainBlack);
     border: 1px solid var(--primaryColor);
     transition: var(--mainTransition);
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     cursor: pointer;
   }
   .banner-btn:hover {
