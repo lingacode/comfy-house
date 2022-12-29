@@ -13,20 +13,28 @@ const productsDOM = document.querySelector(".products-center");
 let cart = [];
 
 // getting the products
-class Products{
-    async getProducts(){
-    let result = await fetch('products.json')
+class Products {
+    async getProducts() {
+        try {
+            let result = await fetch('products.json')
+            let data = await result.json();
+            return data;
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 // display products
-class UI{
+class UI {
 
 }
 // local storage
-class Storage{
+class Storage {
 
 }
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
     const products = new Products();
-})
+    // get all products
+    products.getProducts().then(data => console.log(data));
+});
