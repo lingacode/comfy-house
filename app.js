@@ -1,10 +1,10 @@
-const client = contentful.createClient({
+// const client = contentful.createClient({
 
-space: "developer_bookshelf";
+// space: "developer_bookshelf";
 
 
-accessToken: "0b7f6x59a0"
-});
+// accessToken: "0b7f6x59a0"
+// });
 
 
 
